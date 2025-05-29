@@ -83,7 +83,7 @@ export const UserProvider = ({
   const posthog = usePostHog();
 
   const isGuest = !user || user.tier === "guest";
-  const tier = isGuest ? "guest" : user.tier;
+  const tier = isGuest ? "guest" : "pro";
 
   // biome-ignore lint/correctness/useExhaustiveDependencies: Fix this later
   React.useEffect(() => {
